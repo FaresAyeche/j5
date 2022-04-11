@@ -1,32 +1,32 @@
 
 public class BD extends Livre {
-	boolean couleur;
-	String LeSensDeLecture;
-	
+Boolean couleur;
+//String sens;
 
-	public BD(String titre, String auteur, double prix, int NombreDePage, boolean couleur) {
-		super(titre, auteur, prix, NombreDePage);
-		this.couleur = couleur;
-		this.LeSensDeLecture = "de gauche à droite";
+	public BD(String titre, String auteur, double prix, int nbrDePage,Boolean couleur) {
+		super(titre, auteur, prix, nbrDePage);
+		// TODO Auto-generated constructor stub
+		this.couleur=false;
+		//this.sens="de gauche à droite";
+	}
+	public void Afficher () {
+		super.Afficher();
+		if(couleur==true) {
+			System.out.println("BD avec couleur");}
+			else {
+				System.out.println("BD avec noire et blanc");
+			}
+		 System.out.println("Se lit de gauche à droite");
+			System.out.println("------------------------");
+			System.out.println("------------------------");
+			}
+			
+			
+			
 		
 	}
-		public void BD() {
-			this.couleur = true;
-}
-			public void Afficher() {
-				super.Afficher();
-				System.out.println(this.LeSensDeLecture);
-			
+	
+	
+	
+	
 
-			if (couleur==true) {
-			System.out.println("Couleur :couleur");
-			}
-			else {System.out.println("Couleur:N&B");
-			
-	}
-	
-	
-	
-			}
-
-}

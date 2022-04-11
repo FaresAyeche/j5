@@ -1,15 +1,15 @@
 
 public class Manga extends Livre {
-	boolean couleur;
-	String LeSensDeLecture;
-	int taille;
-	public Manga(String titre, String auteur, double prix, int NombreDePage,boolean couleur,String LeSensDeLecture,int taille) {
-		super(titre, auteur, prix, NombreDePage);
+
+	public Manga(String titre, String auteur, double prix, int nbrDePage) {
+		super(titre, auteur, prix, nbrDePage);
 		// TODO Auto-generated constructor stub
-		this.couleur = false;
-		this.LeSensDeLecture = "de droite à gauche ";
-		this.taille = taille;
 	}
-	
+	public void Afficher() {
+	super.Afficher();
+	System.out.println("se lit de droite vers la gauche, les mangas sont toujours en noir et blanc");
+	System.out.println("------------------------");
+	System.out.println("------------------------");
+	}	
 
 }
